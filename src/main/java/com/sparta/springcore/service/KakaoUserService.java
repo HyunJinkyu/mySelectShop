@@ -121,6 +121,16 @@ public class KakaoUserService {
                 .orElse(null);
         if (kakaoUser == null) {
             // 회원가입
+
+            //숙제:동일한 이메일 주소로 카카오 로그인을 시도
+            kakaoUser = userRepository.findByEmail(kakaoUserInfo.getEmail())
+                    .orElse(null);
+            if(kakaoUser != null){
+                kakaoUser.setKakaoId(kakaoUserInfo.getId());
+                userRepository.save(kakaoUser);
+                return kakaoUser;
+            }
+
             // username: kakao nickname
             String nickname = kakaoUserInfo.getNickname();
             // password: random UUID
