@@ -27,12 +27,15 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
+    //Spring Security 를 테스트하기 위한 모듈
+    testImplementation 'org.springframework.security:spring-security-test'
+
     // 스프링 시큐리티
     implementation 'org.springframework.boot:spring-boot-starter-security'
     // Thymeleaf (뷰 템플릿 엔진)
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 }
 
-tasks.named('test') {
+test{
     useJUnitPlatform()
 }
