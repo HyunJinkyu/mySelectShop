@@ -1,6 +1,6 @@
 package mockobject;
 
-import com.sparta.springcore.model.Product;
+import com.myselectshop.springcore.model.Product;
 
 import java.util.ArrayList;
 import java.util.List;

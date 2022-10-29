@@ -1,8 +1,8 @@
 package mockobject;
 
-import com.sparta.springcore.dto.ProductMypriceRequestDto;
-import com.sparta.springcore.dto.ProductRequestDto;
-import com.sparta.springcore.model.Product;
+import com.myselectshop.springcore.dto.ProductMypriceRequestDto;
+import com.myselectshop.springcore.dto.ProductRequestDto;
+import com.myselectshop.springcore.model.Product;
 
 import java.util.List;
 
